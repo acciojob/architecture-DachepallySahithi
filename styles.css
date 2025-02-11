@@ -1,1 +1,84 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 1100px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Styling for the main image container */
+.imageContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mainImage {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table td {
+    padding: 15px;
+    text-align: center;
+}
+
+table td img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+table td p {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    table td {
+        display: block;
+        width: 100%;
+    }
+
+    table td img {
+        width: 100%;
+    }
+
+    table td p {
+        width: 100%;
+    }
+}
